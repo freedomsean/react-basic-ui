@@ -1,0 +1,29 @@
+{
+  "name": "react-basic-ui",
+  "version": "0.0.1-alpha",
+  "description": "a basic ui library which will support some common-use layouts ",
+  "main": "dist/react-basic-ui.js",
+  "scripts": {
+    "pack": "webpack  --progress --colors -p --optimize-minimize  --config webpack.pack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freedomsean/react-basic-ui.git"
+  },
+  "keywords": [
+    "react",
+    "basic-ui"
+  ],
+  "author": "freedomsean <t101598009@ntut.org.tw> (https://freedomsean.github.io/myself/)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "webpack": "^2.4.1"
+  }
+}
