@@ -6,9 +6,12 @@ Now, it will support the following container
 
   - flex-ui
     - FlexAlignUI: this will be always align by your assignment, if the screen size which will depent on your style spec is too small, it will be fill the parent container.  
-    - FlexListUI: it will generate a row list by your assignment, if the screen size is too small, it will be a column list.
+    - FlexListUI (it still be developing): it will generate a row list by your assignment, if the screen size is too small, it will be a column list.
   - grid-ui: the following two components needs to use together, in ordert to display the more customize grid sytem
       - GridUI: the container of this grid, it will be divided to 12 columns
+      - RowUI: it can be assigned the columns of staring and ending
+  - motion-ui
+      - MotionUI: it will watch both Mouse and Touch events and execute the sample event handlers. In addition to the changed distincts, it also offers the events "motionUp", "motionDown", "motionLeft", "motionRight". It doesn't need to check the x-axis and y-axis in your client codes
       - RowUI: it can be assigned the columns of staring and ending.
 
 ## Install:
@@ -20,8 +23,7 @@ npm install --save react-basic-ui
 ## Use It:
 
 ```js
-import { FlexAlignUI, FlexListUI, RowUI, GridUI } from 'react-basic-ui'
-
+import { FlexAlignUI, FlexListUI, RowUI, GridUI, MotionUI } from 'react-basic-ui'
 
  // render a list which is align to the right
  const arrItems = [ "about", "signin", "signup", "logout", "remember-me", "happy-ending" ]
@@ -34,8 +36,24 @@ import { FlexAlignUI, FlexListUI, RowUI, GridUI } from 'react-basic-ui'
 
 // render a div which will be layout from column2 to column11
 <GridUI>
-    <RowUI from={2} to={11}>
-        <div style={{ backgroundColor: 'red', width: '100vw' }}></div>
+    <RowUI xsFrom={1} to={12} from={3} to={6}>
+        <div style={{ backgroundColor: 'red', width: '100vw' }}>
+            {"123"}
+        </div>
     </RowUI>
 </GridUI>
+
+// render a container which will show the change distinct
+<MotionUI 
+    motionDistinctX={100} motionDistinctY={100}  
+    motionChange={ ( x, y ) => console.log(x, y) } 
+    motionUp={ () => console.log('up') } 
+    motionDown={ () => console.log('Down') } 
+    motionLeft={ () => console.log('Left') } 
+    motionRight={ () => console.log('Right') }>
+
+    { ...some contents }
+
+</MotionUI>
+
 ```

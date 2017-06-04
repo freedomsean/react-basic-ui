@@ -1,0 +1,24 @@
+@media all and (max-width: 500px) {
+    ul.flex-list {
+        flex-direction: column;
+    }
+
+    div.flex-stretch-horizontal {
+        min-width: 100vw;
+    }
+
+    div.flex-stretch-vertical {
+        min-height: 100vh;
+    }
+
+}
+
+@media all and (min-width: 500px) {
+    ul.flex-list {
+        flex-direction: row;
+    }
+
+    li.flex-list-element {
+        max-width: 100px;
+    }
+}
