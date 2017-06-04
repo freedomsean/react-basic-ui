@@ -4,9 +4,9 @@ This package has some basic layouts to support you to generate a RWD page.
 It won't use any external librayies, in order to make your client code use easily.
 Now, it will support the following container
 
-  - flex-ui
+  - flex-ui (it still be developing)
     - FlexAlignUI: this will be always align by your assignment, if the screen size which will depent on your style spec is too small, it will be fill the parent container.  
-    - FlexListUI (it still be developing): it will generate a row list by your assignment, if the screen size is too small, it will be a column list.
+    - FlexListUI: it will generate a row list by your assignment, if the screen size is too small, it will be a column list.
   - grid-ui: the following two components needs to use together, in ordert to display the more customize grid sytem
       - GridUI: the container of this grid, it will be divided to 12 columns
       - RowUI: it can be assigned the columns of staring and ending
@@ -19,6 +19,11 @@ Now, it will support the following container
 ```sh 
 npm install --save react-basic-ui
 ```
+
+## Demo:
+
+Demo site: https://freedomsean.github.io/react-basic-ui/demo/static/
+Demo source code: https://github.com/freedomsean/react-basic-ui/blob/master/demo/containers/App.jsx
 
 ## Use It:
 
