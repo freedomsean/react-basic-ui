@@ -22,8 +22,8 @@ npm install --save react-basic-ui
 
 ## Demo:
 
-Demo site: https://freedomsean.github.io/react-basic-ui/demo/static/
-Demo source code: https://github.com/freedomsean/react-basic-ui/blob/master/demo/containers/App.jsx
+  - Demo site: https://freedomsean.github.io/react-basic-ui/demo/static/
+  - Demo source code: https://github.com/freedomsean/react-basic-ui/blob/master/demo/containers/App.jsx
 
 ## Use It:
 
